@@ -1,0 +1,120 @@
+body {
+    background-color: rgb(210, 203, 201);
+    color: rgb(66, 43, 41);
+}
+
+nav {
+    width: 99vw;
+    text-align: right;
+}
+
+nav a {
+    text-decoration: none; 
+    font-size: 1.7rem; 
+    font-family: 'Inria Serif', serif;
+    display: inline-block;
+    position: relative;
+    margin: 0 1vw;
+    color: rgb(66, 43, 41);
+}
+
+nav a:hover {
+    color: rgb(66, 43, 41);
+    transition: color 0.3s ease;
+    border-bottom: 2px solid #000000;}
+
+nav a:hover::after {
+    left: 0;
+    bottom: -2px; 
+    height: 2px; 
+    background-color: #000000; 
+}
+
+.title_container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    width: 60vw;
+    min-height: 20vh;    
+    margin: 0 auto; 
+    margin-top: 20vh; 
+    text-align: right;
+    align-items: flex-end; 
+    justify-items: center; 
+    position: relative;
+    top: 50%; 
+    transform: translateY(-50%);
+    padding-bottom: 0;
+}
+
+.FM {
+    font-size: 4rem; 
+    justify-self: start;
+    font-family: 'Aboreto', serif;
+    font-weight: 100;
+}
+
+.chapter_title {
+    font-size: 6rem; 
+    justify-self: end;
+    font-family: 'Aboreto', serif;
+    font-weight: 100;
+}
+
+.chapter_title2 {
+    font-size: 4.5rem; 
+    justify-self: end;
+    font-family: 'Aboreto', serif;
+    font-weight: 100;
+    text-align: right;
+}
+
+.paragraph {
+    font-size: 1.7rem; 
+    font-family: "Playfair";
+    font-weight: lighter;
+    color: rgb(102, 84, 82);
+    opacity: 0.5;
+    text-align: center;
+    align-items: center;
+    width: 65vw;
+    margin: 0 auto;
+    padding-top: 0;
+}
+
+
+
+.echo {
+    font-size: 1.7rem;
+    font-family: "Playfair";
+    text-align: center;
+    width: 65vw;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -20%);
+    padding-bottom: 30px;
+}
+
+.skip-buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5vw;
+}
+
+.skip-buttons a img {
+    width: 50px; 
+    height: auto;
+}
+
+.skip-buttons a img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}

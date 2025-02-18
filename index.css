@@ -1,0 +1,155 @@
+body {
+    background-color: rgb(210, 203, 201);
+    width: 100vw;
+}
+
+figure {
+    position: relative;
+    margin: 0; 
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto; 
+    z-index: -1;
+}
+
+figure img {
+    display: block;
+    width: auto; 
+    max-width: 100%; 
+    object-fit: cover; 
+}
+
+nav {
+    position: absolute;
+    width: 99vw;
+    text-align: right;
+}
+
+nav a {
+    color: rgb(102, 84, 82);
+    text-decoration: none; 
+    font-size: 1.7rem;
+    font-family: 'Inria Serif', serif;
+    display: inline-block;
+    position: relative;
+    margin: 0 1vw;
+}
+
+nav a:hover {
+    color: rgb(66, 43, 41);
+    transition: color 0.3s ease; 
+    border-bottom: 2px solid #000000;}
+
+nav a:hover::after {
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #000000; 
+}
+
+.maingrid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 60vw;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 3vh;}
+
+p {
+    font-family: 'InriaSerif', serif;
+    font-size: 1.5rem;
+    color: rgb(102, 84, 82);
+}
+
+h1 { 
+    font-size: 20rem; 
+    font-family: 'Aboreto', serif;
+    font-weight: 100;
+    margin: -10px;
+    padding: 0;
+    line-height: 1;
+    letter-spacing: -0.15em;
+    color: rgb(102, 84, 82);
+}
+h2 { 
+    font-size: 19rem; 
+    font-family: 'Aboreto', serif;
+    font-weight: 100;
+    margin: -10px;
+    line-height: 1; 
+    letter-spacing: -0.19em;
+    padding: 0;
+    color: rgb(102, 84, 82);
+}
+
+h3 { 
+    font-size: 2.5rem; 
+    justify-self: start;
+    font-family: "Playfair";
+    font-weight: lighter;
+    margin: 0;
+    padding: 0;
+    color: rgb(102, 84, 82);
+}
+
+h4 { 
+    font-size: 1.7rem; 
+    justify-self: start;
+    font-family: "Playfair";
+    font-weight: lighter;
+    margin: 2px;
+    color: rgb(102, 84, 82);
+    opacity: 0.5;
+}
+
+.title {
+    display: flex; 
+    justify-content: center; 
+    align-items: baseline; 
+    gap: 0;
+}
+
+.chapter {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto;
+    width: 80vw; 
+    margin: 0 auto; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.text {
+    width: 80vw;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.chapter_button {
+    color: rgb(210, 203, 201);
+    display: block;
+    background-color: rgb(117, 114, 109);
+    text-align: center;
+    width: 100px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    align-items: right;
+    justify-self: end;
+}
+
+.chapter_button:hover {
+    border: 2px solid rgb(243, 237, 231);
+    box-shadow: #000000;
+}
+.chapter_button:active {
+    background-color: rgb(234, 227, 214);
+}
