@@ -1,29 +1,34 @@
 body {
-    background-color: rgb(210, 203, 201);
+    background-color: rgb(216, 217, 212);
     width: 100vw;
+    margin: 0;
 }
 
 figure {
-    position: relative;
-    margin: 0; 
+    margin: 10px; 
     top: 0;
     left: 0;
     width: auto;
-    height: auto; 
-    z-index: -1;
+    height: 50vh; 
 }
 
 figure img {
-    display: block;
     width: auto; 
-    max-width: 80%; 
+    max-width: 100%; 
     object-fit: cover; 
+    margin-top: 80px; 
+    margin-bottom: 20px;
+
 }
 
 nav {
-    position: absolute;
-    width: 99vw;
-    text-align: right;
+    position: fixed;
+    width: 100vw;  /* Ensure the navbar spans the entire width of the viewport */
+    text-align: center;
+    display: flex;  /* Flexbox for horizontal layout */
+    justify-content: space-between;  /* Evenly space out the links */
+    padding: 0 10vw;  /* Optional, to add padding on the sides */
+    z-index: 10;
 }
 
 nav a {
@@ -32,8 +37,7 @@ nav a {
     font-size: 1.7rem;
     font-family: 'Inria Serif', serif;
     display: inline-block;
-    position: relative;
-    margin: 0 1vw;
+    margin: 0 10vw; 
 }
 
 nav a:hover {
@@ -68,7 +72,7 @@ p {
 }
 
 h1 { 
-    font-size: 20rem; 
+    font-size: 25rem; 
     font-family: 'Aboreto', serif;
     font-weight: 100;
     margin: -10px;
@@ -76,16 +80,19 @@ h1 {
     line-height: 1;
     letter-spacing: -0.15em;
     color: rgb(102, 84, 82);
+    margin-bottom: -20px;
 }
+
 h2 { 
-    font-size: 19rem; 
+    font-size: 24rem; 
     font-family: 'Aboreto', serif;
     font-weight: 100;
     margin: -10px;
     line-height: 1; 
-    letter-spacing: -0.19em;
+    letter-spacing: -0.20em;
     padding: 0;
     color: rgb(102, 84, 82);
+    margin-bottom: -20px;
 }
 
 h3 { 
@@ -113,6 +120,8 @@ h4 {
     justify-content: center; 
     align-items: baseline; 
     gap: 0;
+    margin-bottom: -20px;  /* Remove margin at the bottom of the container */
+    padding-bottom: -20px;
 }
 
 .chapter {

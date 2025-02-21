@@ -1,5 +1,5 @@
 let lastWordTime = 0; // Store the last time a word appeared
-const wordCooldown = 200; // Time in milliseconds (adjust to control frequency)
+const wordCooldown = 300; // Time in milliseconds (adjust to control frequency)
 
 document.addEventListener("mousemove", (e) => {
     const currentTime = Date.now();
@@ -14,12 +14,11 @@ document.addEventListener("mousemove", (e) => {
     const words = [
         "existence", 
         "echo", 
-        "the other person", 
-        "obscure sorrow", 
+        "person", 
+        "sorrow", 
         "realization", 
-        "john koenig", 
         "harmony", 
-        "cosmic insignificance"
+        "insignificance"
     ];
 
     const randomWord = words[Math.floor(Math.random() * words.length)]; // Pick a random word
@@ -31,8 +30,8 @@ document.addEventListener("mousemove", (e) => {
     document.body.appendChild(textElement);
 
     // Slightly offset the text position so they don’t overlap
-    const offsetX = (Math.random() - 0.5) * 50; // Random offset between -25px to +25px
-    const offsetY = (Math.random() - 0.5) * 50;
+    const offsetX = (Math.random() - 0.5) * 100; // Random offset between -25px to +25px
+    const offsetY = (Math.random() - 0.5) * 100;
     
     // **Changed this part:**
     // Before: e.clientX / e.clientY (only worked in viewport)

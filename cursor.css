@@ -10,10 +10,11 @@
 
 .cursor-text {
     position: absolute;
-    font-size: 2rem;
-    font-family: 'Inria Serif', serif;
+    font-size: 1.5rem;
+    font-family: 'SeoulHangang', serif;    
     color: rgb(173, 161, 160);
     pointer-events: none;
     white-space: nowrap;
-    transition: opacity 2s ease-out, transform 3s ease-out;
+    opacity: 50%;
+    transition: opacity 2s ease-out, transform 4s ease-out;
 }

@@ -1,21 +1,28 @@
 body {
-    background-color: rgb(210, 203, 201);
+    background-color: rgb(216, 217, 212);
     color: rgb(66, 43, 41);
 }
 
 nav {
-    width: 99vw;
-    text-align: right;
+    position: fixed;
+    top: 0; /* Ensures it stays at the top */
+    left: 0;
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw;
+    z-index: 10; 
 }
 
 nav a {
+    color: rgb(102, 84, 82);
     text-decoration: none; 
-    font-size: 1.7rem; 
+    font-size: 1.7rem;
     font-family: 'Inria Serif', serif;
     display: inline-block;
-    position: relative;
-    margin: 0 1vw;
-    color: rgb(66, 43, 41);
+    margin: 0 10vw; 
 }
 
 nav a:hover {
@@ -36,14 +43,14 @@ nav a:hover::after {
     width: 60vw;
     min-height: 20vh;    
     margin: 0 auto; 
-    margin-top: 20vh; 
     text-align: right;
     align-items: flex-end; 
     justify-items: center; 
     position: relative;
-    top: 50%; 
+    top: 20%; 
     transform: translateY(-50%);
     padding-bottom: 0;
+    margin-top: 200px;
 }
 
 .FM {
@@ -54,7 +61,7 @@ nav a:hover::after {
 }
 
 .chapter_title {
-    font-size: 6rem; 
+    font-size: 5rem; 
     justify-self: end;
     font-family: 'Aboreto', serif;
     font-weight: 100;
@@ -70,7 +77,7 @@ nav a:hover::after {
 
 .paragraph {
     font-size: 1.7rem; 
-    font-family: "Playfair";
+    font-family: 'Playfair';
     font-weight: lighter;
     color: rgb(102, 84, 82);
     opacity: 0.5;
@@ -85,7 +92,7 @@ nav a:hover::after {
 
 .echo {
     font-size: 1.7rem;
-    font-family: "Playfair";
+    font-family: 'Playfair';
     text-align: center;
     width: 65vw;
     align-items: center;
@@ -97,6 +104,8 @@ nav a:hover::after {
     left: 50%;
     transform: translate(-50%, -20%);
     padding-bottom: 30px;
+    color: rgb(102, 84, 82);
+    opacity: 0.5;
 }
 
 .skip-buttons {
@@ -107,6 +116,7 @@ nav a:hover::after {
     display: flex;
     justify-content: space-between;
     padding: 0 5vw;
+    opacity: 0.5;
 }
 
 .skip-buttons a img {

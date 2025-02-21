@@ -1,3 +1,8 @@
+.scroll {
+    margin-top: 150px;
+    margin-bottom: 0;
+}
+
 #rightscroll-container {
     overflow: hidden;
     width: 99vw;
@@ -5,7 +10,7 @@
     align-items: center;
     opacity: 0.2;
     position: relative;
-    margin-top: -25px
+    margin-top: -25px;
 }
 
 #rightscroll-container2 {
@@ -14,7 +19,8 @@
     height: 45px;
     align-items: center;
     position: relative;
-    margin-top: -25px
+    margin-top: -25px;
+    opacity: 0.4;
 }
 
 #leftscroll-container {
@@ -30,7 +36,7 @@
     width: 99vw;
     align-items: center;
     margin-top: -25px;
-    opacity: 0.7;
+    opacity: 0.6;
 
 }
 
@@ -39,6 +45,22 @@
     color: rgb(102, 84, 82);
     font-family: 'Inria Serif', serif;
     font-size: 2.5rem;
+    white-space: nowrap; 
+}
+
+#rightscroll-text2 {
+    animation: scroll-right 7s linear infinite;
+    color: rgb(102, 84, 82);
+    font-family: 'Inria Serif', serif;
+    font-size: 1.5rem;
+    white-space: nowrap; 
+}
+
+#rightscroll-text3 {
+    animation: scroll-right 7s linear infinite;
+    color: rgb(102, 84, 82);
+    font-family: 'Inria Serif', serif;
+    font-size: 1rem;
     white-space: nowrap; 
 }
 
@@ -56,6 +78,22 @@
     color: rgb(102, 84, 82);
     font-family: 'Inria Serif', serif;
     font-size: 2.5rem;
+    white-space: nowrap; 
+}
+
+#leftscroll-text2 {
+    animation: scroll-left 7s linear infinite;
+    color: rgb(102, 84, 82);
+    font-family: 'Inria Serif', serif;
+    font-size: 1.5rem;
+    white-space: nowrap; 
+}
+
+#leftscroll-text3 {
+    animation: scroll-left 7s linear infinite;
+    color: rgb(102, 84, 82);
+    font-family: 'Inria Serif', serif;
+    font-size: 1rem;
     white-space: nowrap; 
 }
 
