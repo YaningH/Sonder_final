@@ -77,7 +77,7 @@ h1 {
     font-weight: 100;
     margin: -10px;
     padding: 0;
-    line-height: 0.8;
+    line-height: 0.6;
     letter-spacing: -0.15em;
     color: rgb(102, 84, 82);
     margin-bottom: -20px;
@@ -88,7 +88,7 @@ h2 {
     font-family: 'Aboreto', serif;
     font-weight: 100;
     margin: -10px;
-    line-height: 0.8; 
+    line-height: 0.6; 
     letter-spacing: -0.20em;
     padding: 0;
     color: rgb(102, 84, 82);
